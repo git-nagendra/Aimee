@@ -305,6 +305,28 @@ h6 {
 .btn_style:hover::before {
   width: 100%;
 }
+.cursor{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #0b0448b0;
+  z-index: 9999;
+  pointer-events: none;
+  transition: 0.2s ease;
+  transform: translate(-50%,-50%);
+  /* mix-blend-mode: difference; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot{
+  height: 6px;
+  width: 6px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
 
 @media only screen and (max-width: 787px) {
   nav {
